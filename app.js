@@ -18,8 +18,6 @@ const apiPort = process.env.PORT || 4000
 
 var app = express();
 
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -46,7 +44,6 @@ app.use('/users', usersRouter);
 app.use("/testAPI", testAPIRouter);
 app.use('/api/order', orderRouter);
 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -63,20 +60,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-/*
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-*/
-
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-
-
-
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));
-
-
 
 module.exports = app;
 

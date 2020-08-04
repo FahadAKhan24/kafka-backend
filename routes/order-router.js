@@ -14,8 +14,6 @@ router.put('/:id', OrderCtrl.updateOrder);
 router.get("/", function(req, res, next) {
     res.send("order API is working properly");
 });
-//router.delete('/movie/:id', MovieCtrl.deleteMovie)
-//router.get('/movie/:id', MovieCtrl.getMovieById)
-//router.get('/movies', MovieCtrl.getMovies)
+
 
 module.exports = router;

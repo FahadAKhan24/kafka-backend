@@ -24,8 +24,9 @@ yarn-error.log*
 
 /db
 
-/public
-
 /bin
 
+/public
+
+/package.json
 /package-lock.json
