@@ -23,3 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 /db
+
+/public
+
+/bin
+
+/package-lock.json
